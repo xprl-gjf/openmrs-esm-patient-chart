@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next';
 import { Button, Header, HeaderGlobalBar, HeaderMenuButton, Tag, Tooltip } from '@carbon/react';
 import {
   age,
-  displayName,
   ConfigurableLink,
   useAssignedExtensions,
   useLayoutType,
@@ -14,6 +13,7 @@ import {
   ExtensionSlot,
   interpolateUrl,
 } from '@openmrs/esm-framework';
+import { displayName } from '@openmrs/esm-utils';
 import { launchPatientWorkspace, useSystemVisitSetting } from '@openmrs/esm-patient-common-lib';
 import { type MappedQueuePriority, useVisitQueueEntry } from '../visit/queue-entry/queue.resource';
 import { CloseButton } from './close-button.component';
